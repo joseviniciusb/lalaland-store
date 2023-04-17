@@ -16,7 +16,7 @@ const corsOptions = {
 }
 app.use(cors(corsOptions))
 
-app.get("/teste", (req, res) => {
+app.get("/api", (req, res) => {
   res.send({ message: "Teste nodemon com tailwind" })
 })
 

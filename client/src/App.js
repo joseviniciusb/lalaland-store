@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   const [message, setMessage] = useState("");
   useEffect(() => {
-    fetch("/teste")
+    fetch("/api")
       .then((response) => response.json())
       .then((data) => {
         setMessage(data.message);
