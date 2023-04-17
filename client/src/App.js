@@ -1,19 +1,24 @@
-import { useEffect, useState } from "react"
-import "./App.css"
+import { useEffect, useState } from "react";
+import "./App.css";
 
 function App() {
-  const [message, setMessage] = useState("")
+  const [message, setMessage] = useState("");
   useEffect(() => {
     fetch("/teste")
-      .then(response => response.json())
-      .then(data => {
-        setMessage(data.message)
+      .then((response) => response.json())
+      .then((data) => {
+        setMessage(data.message);
       })
-      .catch(err => console.log(err))
-  }, [])
-  return <div className="App">  <h1 class="text-3xl font-bold underline">
-  {message ? message : "Loading.."}
-</h1></div>
+      .catch((err) => console.log(err));
+  }, []);
+  return (
+    <div className="App">
+      {" "}
+      <h1 class="text-3xl font-bold underline">
+        {message ? message : "Loading.."}
+      </h1>
+    </div>
+  );
 }
 
-export default App
+export default App;
