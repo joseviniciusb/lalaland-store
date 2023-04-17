@@ -16,8 +16,8 @@ const corsOptions = {
 }
 app.use(cors(corsOptions))
 
-app.get("/", (req, res) => {
-  res.send({ message: "Teste nodemon!" })
+app.get("/teste", (req, res) => {
+  res.send({ message: "Teste nodemon com tailwind" })
 })
 
 app.listen(port, () => {
