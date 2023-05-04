@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       {" "}
-      <h1 class="text-2xl font-bold underline">
+      <h1 className="text-2xl font-bold underline">
         {message ? message : "Loading.."}
       </h1>
     </div>
