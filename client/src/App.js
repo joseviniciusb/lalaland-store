@@ -4,7 +4,12 @@ import "./App.css";
 function App() {
   const [message, setMessage] = useState("");
   useEffect(() => {
-    fetch("/api")
+    fetch("/api", {
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+    })
       .then((response) => response.json())
       .then((data) => {
         setMessage(data.message);
@@ -14,7 +19,7 @@ function App() {
   return (
     <div className="App">
       {" "}
-      <h1 class="text-2xl font-bold underline">
+      <h1 className="text-2xl font-bold underline">
         {message ? message : "Loading.."}
       </h1>
     </div>
