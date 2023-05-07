@@ -1,8 +1,8 @@
-#Projeto Marketplace
+# Projeto Marketplace
 
 Somos uma plataforma que permite a interação entre vendedores e compradores. O objetivo é fornecer um ambiente onde os vendedores possam listar seus produtos e os compradores possam visualizar, pesquisar e adquirir esses produtos.
 
-##Dependências
+## Dependências
 
 express (v4.18.2): Um framework web para Node.js que simplifica o processo de criação de aplicativos da web.
 mysql2 (v3.2.4): Um driver do MySQL para Node.js que permite a conexão com um banco de dados MySQL.
