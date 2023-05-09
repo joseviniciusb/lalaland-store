@@ -1,12 +1,12 @@
 const express = require("express");
 
 const router = express.Router();
-
-const db = require("../models/db");
+const Product = require('../models/product')
 
 router.get("/api/products", async function (req, res) {
   console.log("dsadsadsadsadsadsadasdsadsadsa");
-  res.send({ message: "Teste de rota lalalandDD" });
+  const products = await Product.findAll()
+  res.status(200).json( products )
 });
 
 router.post("/api/product", async function (req, res) {
