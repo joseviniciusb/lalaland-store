@@ -25,7 +25,6 @@ function App() {
     <>
       <Background>
         <Header />
-
       </Background>
 
     </>

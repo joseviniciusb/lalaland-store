@@ -1,3 +1,4 @@
+import SearchBar from "./SearchBar";
 import { Background, BigText, FlexContainer, WhiteText } from "./TailwindComponents";
 
 const Header = () => {
@@ -7,8 +8,11 @@ const Header = () => {
 
             <Background>
                 <FlexContainer>
-                    <BigText>Lalaland</BigText>
-                    <WhiteText>Store</WhiteText>
+                    <div className="flex">
+                        <BigText>Lalaland</BigText>
+                        <WhiteText>Store</WhiteText>
+                    </div>
+                    <SearchBar></SearchBar>
                 </FlexContainer>
 
             </Background>
