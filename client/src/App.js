@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Header from "./components/Header";
+import { Background } from "./components/TailwindComponents";
 
 function App() {
   const [message, setMessage] = useState("");
+
   useEffect(() => {
     fetch("/api", {
       headers: {
@@ -16,13 +19,17 @@ function App() {
       })
       .catch((err) => console.log(err));
   }, []);
+
+  console.log(message);
   return (
-    <div className="App">
-      {" "}
-      <h1 className="text-2xl font-bold underline">
-        {message ? message : "Loading.."}
-      </h1>
-    </div>
+    <>
+      <Background>
+        <Header />
+
+      </Background>
+
+    </>
+
   );
 }
 
