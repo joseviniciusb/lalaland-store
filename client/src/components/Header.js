@@ -1,4 +1,4 @@
-import { Background, BigText } from "./TailwindComponents";
+import { Background, BigText, FlexContainer, WhiteText } from "./TailwindComponents";
 
 const Header = () => {
 
@@ -6,7 +6,11 @@ const Header = () => {
         <>
 
             <Background>
-                <BigText>Lalaland</BigText>
+                <FlexContainer>
+                    <BigText>Lalaland</BigText>
+                    <WhiteText>Store</WhiteText>
+                </FlexContainer>
+
             </Background>
 
         </>
