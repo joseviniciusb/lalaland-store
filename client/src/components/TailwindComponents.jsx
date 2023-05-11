@@ -2,7 +2,8 @@ export const Background = ({ children }) => <div className="bg-dark bg-cover">{c
 export const BigText = ({ children }) => <p className="text-2xl font-bold text-amber-400">{children}</p>
 export const MainTitle = ({ children }) => <h1 className="text-2xl font-bold underline">{children}</h1>
 export const WhiteText = ({ children }) => <p className="text-2xl text-white ">{children}</p>
-export const FlexContainer = ({ children }) => <div className="flex p-5 space-x-32">{children}</div>
+export const FlexContainer = ({ children }) => <div className="flex">{children}</div>
+export const HeaderContainer = ({ children }) => <div className="flex p-5 space-x-32">{children}</div>
 
 export const NotifyIcon = ({ children }) =>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-6 h-6">
