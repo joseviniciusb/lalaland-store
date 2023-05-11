@@ -1,5 +1,5 @@
 import SearchBar from "./SearchBar";
-import { Background, BigText, FlexContainer, HeartIcon, NotifyIcon, WhiteText } from "./TailwindComponents";
+import { Background, BigText, FlexContainer, HeaderContainer, HeartIcon, IconsContainer, NotifyIcon, ShoppingBag, WhiteText } from "./TailwindComponents";
 
 const Header = () => {
 
@@ -7,21 +7,25 @@ const Header = () => {
         <>
 
             <Background>
-                <FlexContainer>
-                    <div className="flex">
+                <HeaderContainer>
+
+                    <FlexContainer>
                         <BigText>Lalaland</BigText>
                         <WhiteText>Store</WhiteText>
-                    </div>
-                    <SearchBar></SearchBar>
-                    <div className="flex">
-                        <NotifyIcon></NotifyIcon>
-                        <HeartIcon></HeartIcon>
-                    </div>
+                    </FlexContainer>
 
-                </FlexContainer>
+                    <SearchBar />
 
+                    <IconsContainer>
+                        <NotifyIcon />
+                        <HeartIcon />
+                        <ShoppingBag />
+                    </IconsContainer>
+
+
+
+                </HeaderContainer>
             </Background>
-
         </>
 
     )
