@@ -4,7 +4,7 @@ export const MainTitle = ({ children }) => <h1 className="text-2xl font-bold und
 export const WhiteText = ({ children }) => <p className="text-2xl text-white ">{children}</p>
 export const FlexContainer = ({ children }) => <div className="flex">{children}</div>
 export const HeaderContainer = ({ children }) => <div className="flex p-5 space-x-32">{children}</div>
-export const IconsContainer = ({ children }) => <div className="flex space-x-4">{children}</div>
+export const IconsContainer = ({ children }) => <div className="flex space-x-3 items-center">{children}</div>
 
 export const NotifyIcon = ({ children }) =>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-6 h-6">
