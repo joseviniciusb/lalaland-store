@@ -5,6 +5,13 @@ export const WhiteText = ({ children }) => <p className="text-2xl text-white ">{
 export const FlexContainer = ({ children }) => <div className="flex">{children}</div>
 export const HeaderContainer = ({ children }) => <div className="flex p-5 space-x-32">{children}</div>
 export const IconsContainer = ({ children }) => <div className="flex space-x-3 items-center">{children}</div>
+export const VerticalLine = ({ children }) => <div
+    className="flex items-center h-[25px]  w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50">
+    {children}
+</div>
+
+export const ProfileIcon = ({ children }) => <img class="w-6 h-6 p-1 rounded-full ring-1 ring-gray-300 dark:ring-gray-500" src="" alt="Bordered avatar">{children}</img>
+
 
 export const NotifyIcon = ({ children }) =>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-6 h-6">
