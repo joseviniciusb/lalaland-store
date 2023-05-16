@@ -6,7 +6,7 @@ export const FlexContainer = ({ children }) => <div className="flex">{children}<
 export const HeaderContainer = ({ children }) => <div className="flex p-5 space-x-32">{children}</div>
 export const IconsContainer = ({ children }) => <div className="flex space-x-3 items-center">{children}</div>
 export const VerticalLine = ({ children }) => <div
-    className="flex items-center h-[25px]  w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50">
+    className="flex items-center h-[25px] mt-2  w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50">
     {children}
 </div>
 
