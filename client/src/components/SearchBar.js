@@ -1,7 +1,7 @@
 const SearchBar = () => {
     return (
         <div className="flex items-center w-full">
-            <div className="flex rounded w-full ">
+            <div className="flex rounded w-10/12 ">
                 <input
                     type="text"
                     className="block w-full px-4 py-2 text-gray-300 bg-gray-800 rounded-md focus:outline-none "
