@@ -1,6 +1,12 @@
+import { DarkText, ExploreText, MainTitle, WhiteText } from "./TailwindComponents";
+
 const SideBar = () => {
     return (
-        <h1>Side bar</h1>
+        <>
+            <ExploreText></ExploreText>
+
+        </>
+
     )
 }
 

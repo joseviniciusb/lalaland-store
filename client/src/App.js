@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import { Background } from "./components/TailwindComponents";
+import SideBar from "./components/SideBar";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -25,6 +26,7 @@ function App() {
     <>
       <Background>
         <Header />
+        <SideBar />
       </Background>
 
     </>

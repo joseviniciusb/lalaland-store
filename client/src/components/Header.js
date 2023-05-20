@@ -6,28 +6,28 @@ const Header = () => {
     return (
         <>
 
-            <Background>
-                <HeaderContainer>
 
-                    <FlexContainer>
-                        <BigText>Lalaland</BigText>
-                        <WhiteText>Store</WhiteText>
-                    </FlexContainer>
+            <HeaderContainer>
 
-                    <SearchBar />
+                <FlexContainer>
+                    <BigText>Lalaland</BigText>
+                    <WhiteText>Store</WhiteText>
+                </FlexContainer>
 
-                    <IconsContainer>
-                        <NotifyIcon />
-                        <HeartIcon />
-                        <ShoppingBag />
-                        <VerticalLine />
-                        <ProfileIcon />
+                <SearchBar />
 
-                    </IconsContainer>
+                <IconsContainer>
+                    <NotifyIcon />
+                    <HeartIcon />
+                    <ShoppingBag />
+                    <VerticalLine />
+                    <ProfileIcon />
+
+                </IconsContainer>
 
 
-                </HeaderContainer>
-            </Background>
+            </HeaderContainer>
+
         </>
 
     )
