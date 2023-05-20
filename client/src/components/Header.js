@@ -1,5 +1,5 @@
 import SearchBar from "./SearchBar";
-import { Background, BigText, FlexContainer, HeaderContainer, HeartIcon, IconsContainer, NotifyIcon, ProfileIcon, ShoppingBag, VerticalLine, WhiteText } from "./TailwindComponents";
+import { BigText, FlexContainer, HeaderContainer, HeartIcon, IconsContainer, NotifyIcon, ProfileIcon, ShoppingBag, VerticalLine, WhiteText } from "./TailwindComponents";
 
 const Header = () => {
 
