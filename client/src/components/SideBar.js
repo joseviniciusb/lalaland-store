@@ -1,9 +1,12 @@
-import { DarkText, ExploreText, MainTitle, WhiteText } from "./TailwindComponents";
+import { DarkText, ExploreText, FlexContainer, MainTitle, WhiteText } from "./TailwindComponents";
 
 const SideBar = () => {
     return (
         <>
-            <ExploreText></ExploreText>
+            <FlexContainer>
+                <ExploreText></ExploreText>
+            </FlexContainer>
+
 
         </>
 
