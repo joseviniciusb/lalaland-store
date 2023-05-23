@@ -3,15 +3,21 @@ export const BigText = ({ children }) => <p className="text-2xl font-bold text-a
 export const MainTitle = ({ children }) => <h1 className="font-mono italic text-2xl font-bold underline text-white">{children}</h1>
 export const WhiteText = ({ children }) => <p className="text-2xl text-white ">{children}</p>
 export const FlexContainer = ({ children }) => <div className="flex">{children}</div>
-export const HeaderContainer = ({ children }) => <div className="flex p-5 space-x-32 mb-15">{children}</div>
+export const HeaderContainer = ({ children }) => <div className="flex p-5 space-x-32">{children}</div>
 export const IconsContainer = ({ children }) => <div className="flex space-x-3 items-center">{children}</div>
 export const VerticalLine = ({ children }) => <div
     className="flex items-center h-[25px] mt-2  w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50">
     {children}
 </div>
 
+export const SideBarList = ({ children }) => <div className="ml-5">
+    <ul className="max-w-md space-y-1 text-gray-500 list-none list-inside dark:text-gray-400">
+        {children}
+    </ul>
+</div>
+
 export const ExploreText = ({ children }) => <span class="font-mono italic text-white dark:text-white text-xl p-5">
-    Explor<b class=" font-mono italic text-stone-500 dark:text-stone-400">e</b>
+    Explo<b class=" font-mono italic text-stone-500 dark:text-stone-400">re</b>
 </span>
 
 export const ProfileIcon = ({ children }) => <img class="w-6 h-6 p-1 rounded-full ring-1 ring-gray-300 dark:ring-gray-500" src="" alt="Bordered avatar">{children}</img>
