@@ -11,7 +11,7 @@ export const VerticalLine = ({ children }) => <div
 </div>
 
 export const SideBarList = ({ children }) => <div className="ml-5">
-    <ul className="max-w-md space-y-1 text-gray-500 list-none list-inside dark:text-gray-400">
+    <ul className="max-w-md space-y-4 text-gray-500 list-none list-inside dark:text-gray-400">
         {children}
     </ul>
 </div>

@@ -3,13 +3,16 @@ import { DarkText, ExploreText, FlexContainer, MainTitle, SideBarList, WhiteText
 const SideBar = () => {
     return (
         <>
+            <div className="flex flex-col">
+                <ExploreText></ExploreText>
+                <SideBarList>
 
-            <ExploreText></ExploreText>
-            <SideBarList>
-                <li>Categorias</li>
-                <li>Melhores ofertas</li>
-                <li>Pedidos</li>
-            </SideBarList>
+                    <li>Categorias</li>
+                    <li>Melhores ofertas</li>
+                    <li>Pedidos</li>
+                </SideBarList>
+
+            </div>
 
         </>
 
