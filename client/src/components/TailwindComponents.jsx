@@ -11,12 +11,12 @@ export const VerticalLine = ({ children }) => <div
 </div>
 
 export const SideBarList = ({ children }) => <div className="ml-5">
-    <ul className="max-w-md space-y-4 text-gray-500 list-none list-inside dark:text-gray-400">
+    <ul className="max-w-md space-y-4 text-gray-500 list-none list-inside dark:text-gray-400 ">
         {children}
     </ul>
 </div>
 
-export const ExploreText = ({ children }) => <span class="font-mono italic text-white dark:text-white text-xl p-5">
+export const ExploreText = ({ children }) => <span class=" cursor-pointer font-mono italic text-white dark:text-white text-xl p-5">
     Explo<b class=" font-mono italic text-stone-500 dark:text-stone-400">re</b>
 </span>
 

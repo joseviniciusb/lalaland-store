@@ -6,10 +6,9 @@ const SideBar = () => {
             <div className="flex flex-col">
                 <ExploreText></ExploreText>
                 <SideBarList>
-
-                    <li>Categorias</li>
-                    <li>Melhores ofertas</li>
-                    <li>Pedidos</li>
+                    <li className="hover:underline decoration-yellow-200 cursor-pointer">Categorias</li>
+                    <li className="hover:underline decoration-yellow-200 cursor-pointer">Melhores ofertas</li>
+                    <li className="hover:underline decoration-yellow-200 cursor-pointer">Pedidos</li>
                 </SideBarList>
 
             </div>

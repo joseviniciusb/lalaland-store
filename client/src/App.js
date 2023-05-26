@@ -26,8 +26,9 @@ function App() {
     <>
       <Background>
         <Header />
-        <div className="flex space-x-32">
+        <div className="flex space-x-40">
           <SideBar />
+
           <article class="w-60 rounded-md p-2 shadow grid gap-y-2 bg-gray-800">
             <h2 class="text-lg font-bold text-white">Título do produto</h2>
             <figure class="max-w-lg">
@@ -37,6 +38,8 @@ function App() {
             <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis excepturi minima doloremque?</p>
             <button class="rounded p-2 bg-yellow-500 justify-self-center">Visualizar</button>
           </article>
+
+
         </div>
 
       </Background>
