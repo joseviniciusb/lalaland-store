@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
-import { Background, FlexContainer, ProductCard } from "./components/TailwindComponents";
+import { Background, BigProductCard, FlexContainer, ProductCard } from "./components/TailwindComponents";
 import SideBar from "./components/SideBar";
 
 function App() {
@@ -29,12 +29,16 @@ function App() {
         <div className="flex space-x-40">
           <SideBar />
 
-          <ProductCard />
+          <div class="flex h-full space-x-4">
 
+            <BigProductCard />
+            <ProductCard>
+            </ProductCard>
+          </div>
 
         </div>
 
-      </Background>
+      </Background >
 
     </>
 
