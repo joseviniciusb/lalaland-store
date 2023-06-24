@@ -32,8 +32,8 @@ function App() {
           <div class="flex h-full space-x-4">
 
             <BigProductCard />
-            <ProductCard>
-            </ProductCard>
+            <ProductCard />
+
           </div>
 
         </div>

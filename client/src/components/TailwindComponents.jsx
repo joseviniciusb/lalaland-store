@@ -54,14 +54,13 @@ export const ProductCard = ({ children }) => <article class="w-60 rounded-md p-2
     <button class="rounded p-2 bg-yellow-500 justify-self-center">Visualizar</button>
 </article>
 
-export const BigProductCard = ({children}) => <article class="w-3/4 h-96 rounded-md p-2 shadow grid gap-y-2 bg-gray-800">
-<h2 class="text-lg font-bold text-white">Bota</h2>
-<figure class="max-w-xs">
-  <img class="h-auto max-w-full rounded-lg" src="https://io.convertiez.com.br/m/sandromoscoloni/shop/products/images/3067/medium/bota-worker-masculina-sandro-moscoloni-worker-amarela_21627.jpg" alt="image description" />
-  <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Especificações do produto</figcaption>
-</figure>
-<p class="text-white">Lorem Ypmsun</p>
-<button class="rounded p-2 bg-yellow-500 justify-self-center">Visualizar</button>
+export const BigProductCard = ({ children }) => <article class="w-3/4 h-96 rounded-md p-2 shadow grid gap-y-2 bg-gray-800">
+    <h2 class="text-lg font-bold text-white">Bota</h2>
+    <figure class="max-w-xs">
+        <img class="h-auto max-w-full rounded-lg" src="https://io.convertiez.com.br/m/sandromoscoloni/shop/products/images/3067/medium/bota-worker-masculina-sandro-moscoloni-worker-amarela_21627.jpg" alt="image description" />
+        <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Especificações do produto</figcaption>
+    </figure>
+    <p class="text-white">Lorem Ypmsun</p>
 </article>
 
 
