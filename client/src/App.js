@@ -29,7 +29,7 @@ function App() {
         <div className="flex space-x-40">
           <SideBar />
 
-          <div class="flex h-full space-x-4">
+          <div className="flex h-full w-2/3 space-x-4">
 
             <BigProductCard />
             <ProductCard />

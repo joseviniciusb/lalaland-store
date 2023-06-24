@@ -55,12 +55,18 @@ export const ProductCard = ({ children }) => <article class="w-60 rounded-md p-2
 </article>
 
 export const BigProductCard = ({ children }) => <article class="w-3/4 h-96 rounded-md p-2 shadow grid gap-y-2 bg-gray-800">
-    <h2 class="text-lg font-bold text-white">Bota</h2>
-    <figure class="max-w-xs">
-        <img class="h-auto max-w-full rounded-lg" src="https://io.convertiez.com.br/m/sandromoscoloni/shop/products/images/3067/medium/bota-worker-masculina-sandro-moscoloni-worker-amarela_21627.jpg" alt="image description" />
-        <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Especificações do produto</figcaption>
-    </figure>
-    <p class="text-white">Lorem Ypmsun</p>
+    <div class="flex">
+        <figure class="max-w-xs">
+            <img class="h-auto max-w-full rounded-lg" src="https://png.pngtree.com/element_our/png_detail/20180828/white-t-shirt-mockup-png_72953.jpg" alt="image description" />
+            <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Especificações do produto</figcaption>
+        </figure>
+        <div className="flex max-h-10">
+            <hr class="w-12 h-1 ml-8 bg-cyan-500 border-0 rounded md:my-10 dark:bg-gray-700" />
+            <p class="text-gray-600 ml-1 mt-6">Ofertas especiais</p>
+        </div>
+
+    </div>
+
 </article>
 
 
