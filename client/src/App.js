@@ -26,17 +26,34 @@ function App() {
     <>
       <Background>
         <Header />
-        <div className="flex space-x-40">
+
+        <div className="flex flex-wrap space-x-40">
+
           <SideBar />
 
-          <div className="flex h-full w-2/3 space-x-4">
-
+          <div className="flex h-full w-3/5 space-x-4">
             <BigProductCard />
             <ProductCard />
-
           </div>
 
+
+
+
         </div>
+
+
+        <div className="flex justify-center">
+          <article class="w-48 m-5 rounded-md p-2 shadow grid gap-y-2 bg-gray-800">
+            <figure class="max-w-lg">
+              <img class="h-auto max-w-full rounded-lg" src="https://io.convertiez.com.br/m/sandromoscoloni/shop/products/images/3067/medium/bota-worker-masculina-sandro-moscoloni-worker-amarela_21627.jpg" alt="image description" />
+              <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Especificações do produto</figcaption>
+            </figure>
+          </article>
+        </div>
+
+
+
+
 
       </Background >
 
