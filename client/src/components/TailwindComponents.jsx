@@ -60,14 +60,26 @@ export const BigProductCard = ({ children }) => <article class="w-3/4 h-96 round
             <img class="h-auto max-w-full rounded-lg" src="https://png.pngtree.com/element_our/png_detail/20180828/white-t-shirt-mockup-png_72953.jpg" alt="image description" />
             <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Especificações do produto</figcaption>
         </figure>
-        <div className="flex max-h-10">
-            <hr class="w-12 h-1 ml-8 bg-cyan-500 border-0 rounded md:my-10 dark:bg-gray-700" />
-            <p class="text-gray-600 ml-1 mt-6">Ofertas especiais</p>
+        <div className="block">
+
+            <div className="flex max-h-10">
+                <hr class="w-12 h-1 ml-8 bg-cyan-500 border-0 rounded md:my-10 dark:bg-gray-700" />
+                <p class="text-gray-600 ml-1 mt-6">Ofertas especiais</p>
+            </div>
+
+            <div>
+                <h1 className="ml-5 mt-5 text-2xl font-bold text-slate-50" >Men's T-Shirts</h1>
+
+                <h1 className="ml-5 mt-5 text-lg text-slate-500">Bests T-Shirts <span className="text-lg text-slate-50 font-semibold">35% OFF</span>  On All Man's T-Shirts! </h1>
+
+            </div>
+
         </div>
 
     </div>
 
-</article>
+
+</article >
 
 
 
