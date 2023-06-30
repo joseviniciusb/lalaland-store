@@ -16,8 +16,8 @@ export const SideBarList = ({ children }) => <div className="ml-5">
     </ul>
 </div>
 
-export const ExploreText = ({ children }) => <span class=" cursor-pointer font-mono italic text-white dark:text-white text-xl p-5">
-    Explo<b class=" font-mono italic text-stone-500 dark:text-stone-400">re</b>
+export const SidebarTitle = ({ children }) => <span class="font-extrabold italic text-transparent bg-clip-text bg-gradient-to-r from-white from-60%  to-gray-500 to-95% text-xl">
+{children}
 </span>
 
 export const ProfileIcon = ({ children }) => <img class="w-6 h-6 p-1 rounded-full ring-1 ring-gray-300 dark:ring-gray-500" src="" alt="Bordered avatar">{children}</img>
