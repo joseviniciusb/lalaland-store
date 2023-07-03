@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
-import { Background, FlexContainer, ProductCard } from "./components/TailwindComponents";
+import { Background } from "./components/TailwindComponents";
 import SideBar from "./components/SideBar";
 import BigProductCard from "./components/BigProductCard";
+import LittleCard from "./components/LittleCard";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -34,7 +35,7 @@ function App() {
 
           <div className="flex h-full w-3/5 space-x-4">
             <BigProductCard />
-            <ProductCard />
+            <LittleCard />
           </div>
 
         </div>
