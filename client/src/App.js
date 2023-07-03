@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
-import { Background, BigProductCard, FlexContainer, ProductCard } from "./components/TailwindComponents";
+import { Background, FlexContainer, ProductCard } from "./components/TailwindComponents";
 import SideBar from "./components/SideBar";
+import BigProductCard from "./components/BigProductCard";
 
 function App() {
   const [message, setMessage] = useState("");
