@@ -1,4 +1,4 @@
-export const Background = ({ children }) => <div className="bg-dark bg-cover h-max" >{children}</div>
+export const Background = ({ children }) => <div className="bg-dark bg-cover h-screen" >{children}</div>
 export const BigText = ({ children }) => <p className="text-2xl font-bold text-amber-400">{children}</p>
 export const MainTitle = ({ children }) => <h1 className="font-mono italic text-2xl font-bold underline text-white">{children}</h1>
 export const WhiteText = ({ children }) => <p className="text-2xl text-white ">{children}</p>
@@ -32,33 +32,32 @@ export const HeartIcon = ({ children }) => <svg xmlns="http://www.w3.org/2000/sv
     <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" >{children} </path>
 </svg>
 
-export const ShoppingBag = ({ children }) => <div className="flex">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-6 h-6">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-            </svg>
-            {children}
-        </path>
+export const ShoppingBagIcon = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-6 h-6">
+<path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
     </svg>
+</path>
+</svg>
+
+export const ShoppingBag = ({ children }) => <div className="flex">
+    <ShoppingBagIcon />
     <span className="h-4 w-3 inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full">0</span>
 </div>
 
-export const ProductCard = ({ children }) => <article class="w-60 h-80 rounded-md p-2 shadow grid gap-y-2 bg-gray-800">
+export const ProductCard = ({ children }) => <article class="w-60 h-60 rounded-md p-2 shadow grid gap-y-2 bg-gray-800">
     <figure class="max-w-xl">
         <img class="h-60 justify-center max-w-full rounded-lg" src="https://cdn.dribbble.com/users/4959131/screenshots/15963399/media/e2e7c088bb10333a5f6d023b4579446a.png?compress=1&resize=768x576&vertical=center" alt="image description" />
     </figure>
-    <button class="rounded p-2 bg-yellow-500 justify-self-center">Ofertas</button>
 
 </article>
 
-export const BigProductCard = ({ children }) => <article class="w-2/3 h-80 rounded-md p-2 shadow grid gap-y-2 bg-gray-800">
-    <div class="flex">
+export const BigProductCard = ({ children }) => <article class="h-60 rounded-md p-2 shadow grid gap-y-2 bg-gray-800">
+    <div class="flex m-1">
         <figure class="">
-            <img class="h-64 max-w-full rounded-lg" src="https://png.pngtree.com/element_our/png_detail/20180828/white-t-shirt-mockup-png_72953.jpg" alt="image description" />
-            <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Especificações do produto</figcaption>
+            <img style={{transform: "translateY(15px) translateX(-10px) rotate(-15deg)"}} class="h-52 max-w-full rounded-lg" src="/assets/images/jacket.png" alt="image description" />
         </figure>
-        <div className="block">
+        <div>
 
             <div className="flex max-h-10">
                 <hr class="w-12 h-1 ml-8 bg-cyan-500 border-0 rounded md:my-10 dark:bg-gray-700" />
