@@ -43,7 +43,7 @@ function App() {
         <div className="flex justify-center">
           <article class="w-48 m-5 rounded-md p-2 shadow grid gap-y-2 bg-gray-800">
             <figure class="max-w-lg">
-              <img class="h-auto max-w-full rounded-lg" src="./assets/images/bota.png" alt="image description" />
+              <img class="h-auto max-w-full rounded-lg" src="./assets/images/bota.png" alt="Bota" />
               <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Especificações do produto</figcaption>
             </figure>
           </article>
