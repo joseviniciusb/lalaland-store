@@ -9,6 +9,8 @@ import LittleOfferCard from "./components/Offers/LittleOfferCard";
 function App() {
   const [message, setMessage] = useState("");
 
+console.log('criar array de produtos');
+
   useEffect(() => {
     fetch("/api", {
       headers: {
@@ -23,7 +25,6 @@ function App() {
       .catch((err) => console.log(err));
   }, []);
 
-  console.log(message);
   return (
     <>
       <Background>
