@@ -11,6 +11,26 @@ function App() {
 
 console.log('criar array de produtos');
 
+const products = [
+  {
+  marca: 'Lumiss',
+  especificacoes: 'Bota masculina Adventure',
+  preco: '120,00'
+},
+{
+  marca: 'Nike',
+  especificacoes: 'Calças de Moletom Camisa masculina Nsw Club Jogger, Masculino',
+  preco: '300,00'
+},
+{
+  marca: 'Oakley',
+  especificacoes: 'Jaqueta Windbreaker Oakley Jaqueta Windbreaker Oakley, Oakley, masculino',
+  preco: '350,00'
+}
+]
+
+console.log('produtos', products);
+
   useEffect(() => {
     fetch("/api", {
       headers: {
