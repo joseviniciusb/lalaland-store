@@ -34,7 +34,7 @@ function App() {
           <SideBar />
 
           <div className="flex h-full w-3/5 space-x-4">
-            <BigProductCard />
+            <BigProductCard categoria={"Men's T-Shirts"} nome={'T-Shirts'} desconto={'30'}  />
             <LittleCard />
           </div>
 

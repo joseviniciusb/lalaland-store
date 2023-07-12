@@ -1,4 +1,4 @@
-const BigProductCard = () => {
+const BigProductCard = ({nome, desconto, categoria}) => {
     return (
     
     <article class="h-60 rounded-md p-2 shadow grid gap-y-2 bg-gray-800">
@@ -14,9 +14,9 @@ const BigProductCard = () => {
             </div>
 
             <div>
-                <h1 className="ml-5 mt-5 text-2xl font-bold text-slate-50" >Men's T-Shirts</h1>
+                <h1 className="ml-5 mt-5 text-2xl font-bold text-slate-50" >{nome}</h1>
 
-                <h1 className="ml-5 mt-5 text-lg text-slate-500">Bests T-Shirts <span className="text-lg text-slate-50 font-semibold">35% OFF</span>  On All Man's T-Shirts! </h1>
+                <h1 className="ml-5 mt-5 text-lg text-slate-500">Bests {nome} <span className="text-lg text-slate-50 font-semibold">{desconto}% OFF</span>  On All {categoria}! </h1>
 
             </div>
 
