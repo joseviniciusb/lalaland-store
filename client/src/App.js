@@ -3,8 +3,8 @@ import "./App.css";
 import Header from "./components/Header";
 import { Background } from "./components/TailwindComponents";
 import SideBar from "./components/SideBar";
-import BigProductCard from "./components/BigProductCard";
-import LittleCard from "./components/LittleCard";
+import BigOfferCard from "./components/Offers/BigOfferCard";
+import LittleOfferCard from "./components/Offers/LittleOfferCard";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -34,8 +34,8 @@ function App() {
           <SideBar />
 
           <div className="flex h-full w-3/5 space-x-4">
-            <BigProductCard categoria={"Men's T-Shirts"} nome={'T-Shirts'} desconto={'30'}  />
-            <LittleCard />
+            <BigOfferCard offerCategory="Men's T-Shirts" offerDiscount="35% OFF" smallOfferText="Special Offers"  />
+            <LittleOfferCard />
           </div>
 
         </div>
