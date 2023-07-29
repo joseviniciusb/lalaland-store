@@ -7,7 +7,8 @@ import BigOfferCard from "./components/Offers/BigOfferCard";
 import LittleOfferCard from "./components/Offers/LittleOfferCard";
 
 function App() {
-  const [message, setMessage] = useState("");
+  
+const [produtos, setProdutos] = useState([])
 
   console.log('criar array de produtos');
 
@@ -34,21 +35,25 @@ function App() {
     }
   ]
 
-  console.log('produtos', products);
-
   useEffect(() => {
-    fetch("/api", {
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setMessage(data.message);
+    // Fazendo a chamada da API no método componentDidMount
+    fetch('https://joseviniciusb-glowing-space-acorn-5pjqv77vxw62777g-3333.preview.app.github.dev/api/products')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Falha ao obter produtos.');
+        }
+        return response.json();
       })
-      .catch((err) => console.log(err));
+      .then(data => {
+        setProdutos(data);
+      })
+      .catch(error => {
+        console.error('Erro ao obter produtos:', error);
+      });
   }, []);
+
+  console.log('tesadsadas', produtos);
+
 
   return (
     <>
