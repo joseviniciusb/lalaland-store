@@ -20,8 +20,6 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-import './products'
-
 Route.get('/', async () => {
   return { hello: 'world homepage' }
  
@@ -31,3 +29,9 @@ Route.get('/api', async () => {
   return { hello: 'world api' }
  
 })
+
+Route.group(() => {
+  Route.get('products', 'ProductsController.index')
+}).prefix('/api')
+
+
