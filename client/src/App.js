@@ -10,31 +10,6 @@ function App() {
   
 const [produtos, setProdutos] = useState([])
 
-  console.log('criar array de produtos');
-
-  const products = [
-    {
-      marca: 'Lumiss',
-      especificacoes: 'Bota masculina Adventure',
-      preco: '120,00'
-    },
-    {
-      marca: 'Nike',
-      especificacoes: 'Calças de Moletom Camisa masculina Nsw Club Jogger',
-      preco: '300,00'
-    },
-    {
-      marca: 'Oakley',
-      especificacoes: 'Jaqueta Windbreaker Unissex',
-      preco: '350,00'
-    },
-    {
-      marca: 'Vicbela',
-      especificacoes: 'Calça Jogger Feminina',
-      preco: '350,00'
-    }
-  ]
-
   useEffect(() => {
     // Fazendo a chamada da API no método componentDidMount
     fetch('https://joseviniciusb-glowing-space-acorn-5pjqv77vxw62777g-3333.preview.app.github.dev/api/products')
@@ -72,7 +47,7 @@ const [produtos, setProdutos] = useState([])
         </div>
         <div className="flex justify-center">
           {
-            products.map((product) => {
+            produtos.map((product) => {
               return (
 
                 <article class="w-48 m-5 rounded-md p-2 shadow grid gap-y-2 bg-gray-800">
