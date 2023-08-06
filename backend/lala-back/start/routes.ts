@@ -26,7 +26,7 @@ Route.get('/', async () => {
 })
 
 Route.get('/api', async () => {
-  return { hello: 'world api' }
+  return { hello: 'world apii' }
  
 })
 
