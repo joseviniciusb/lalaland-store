@@ -36,10 +36,7 @@ function App() {
         <div className="flex flex-wrap space-x-40">
           <SideBar />
 
-         
-        </div>
-         
-        <div className="flex h-full w-3/5 space-x-4">
+          <div className="flex h-full w-3/5 space-x-4">
             <BigOfferCard
               offerCategory="Men's T-Shirts"
               offerDiscount="35% OFF"
@@ -47,6 +44,8 @@ function App() {
             />
             <LittleOfferCard />
           </div>
+
+        </div>
 
         <div className="flex justify-center">
           {loading ? (
